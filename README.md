@@ -56,13 +56,13 @@ Pour lancer le projet, suivez ces étapes :
      
 ### **Choix techniques et dashboard**
 
-- <img src="./assets/logo-docker.png" alt="MongoDB logo" width="20"> **Docker** : Utilisé pour containeriser l'application, ce qui facilite le déploiement et assure la cohérence entre les environnements de développement et de production.
+- <img src="./app/assets/logo-docker.png" alt="MongoDB logo" width="20"> **Docker** : Utilisé pour containeriser l'application, ce qui facilite le déploiement et assure la cohérence entre les environnements de développement et de production.
 
-- <img src="./assets/logo-dockercompose.png" alt="MongoDB logo" width="20"> **Docker-compose** : Employé pour orchestrer les services multiconteneurs (Scrapy, Dash, MongoDB).
+- <img src="./app/assets/logo-dockercompose.png" alt="MongoDB logo" width="20"> **Docker-compose** : Employé pour orchestrer les services multiconteneurs (Scrapy, Dash, MongoDB).
 
-- <img src="./assets/logo-scrapy.png" alt="MongoDB logo" width="20">**Scrapy** : Outil de crawling pour l'extraction des données. Sa puissance et sa facilité d'utilisation en font un choix optimal. Selenium n'a pas été utilisé en raison de son incompatibilité avec Docker.
+- <img src="./app/assets/logo-scrapy.png" alt="MongoDB logo" width="20">**Scrapy** : Outil de crawling pour l'extraction des données. Sa puissance et sa facilité d'utilisation en font un choix optimal. Selenium n'a pas été utilisé en raison de son incompatibilité avec Docker.
 
-- <img src="./assets/mongodb.png" alt="MongoDB logo" width="20"> **MongoDB** : Base de données choisie pour sa flexibilité avec les données semi-structurées et sa capacité à gérer de grands volumes.
+- <img src="./app/assets/mongodb.png" alt="MongoDB logo" width="20"> **MongoDB** : Base de données choisie pour sa flexibilité avec les données semi-structurées et sa capacité à gérer de grands volumes.
 
 - ![](./images2/logo.png) **Dash** : Technologie utilisée pour représenter les données sous forme de tableau de bord interactif et accessible.
 
@@ -75,7 +75,7 @@ Pour lancer le projet, suivez ces étapes :
 
 Voici l'organisation des fichiers et répertoires du projet :
 
-![Répertoire](./assets/Répertoire.png)
+![Répertoire](./app/assets/Répertoire.png)
 
 #### **Description des répertoires :**
 - **Scrapy** : Contient les scripts pour le scraping des données. Ces scripts sont configurés pour collecter dynamiquement les informations des produits depuis le site web.
@@ -104,19 +104,19 @@ Pour accéder à notre base de données scrappée, nous avons utilisé **MongoDB
 #### **Interface**
 Une fois le dashboard lancé, la première interface visible ressemble à ceci :
 
-![Interface Accueil](assets/accueil.png)
+![Interface Accueil](app/assets/accueil.png)
 
 
 
 ---
 ### **Module de recherche**
 
-![image_page_recherche](assets/page_recherche.png)
+![image_page_recherche](app/assets/page_recherche.png)
 ---
-![image_ho](assets/rech_ho.png)
+![image_ho](app/assets/rech_ho.png)
 ---
 
-![image_ws](assets/rech_ws.png)
+![image_ws](app/assets/rech_ws.png)
 ---
 
 #### **Analyse**
@@ -160,7 +160,7 @@ La distribution des données collectées est représentée par deux visualisatio
 ##### **Histogramme**
 Voici l'histogramme que nous avons généré dans notre tableau de bord. Il représente le nombre d'articles par catégorie (sweater, outwear, bottom) et leur répartition entre hommes et femmes :
 
-![Histogramme](./assets/histogramme1.png)
+![Histogramme](./app/assets/histogramme1.png)
 
   - On remarque une répartition équilibrée pour les **"bottoms"** (identique pour hommes et femmes), mais des différences significatives pour les autres catégories. Les femmes ont plus de **sweaters** (50 vs 24) et moins **d’outwear** (51 vs 60).
 
@@ -168,12 +168,12 @@ Voici l'histogramme que nous avons généré dans notre tableau de bord. Il repr
 
 Quant au graphique Sunburst, comme on l'a dit, il fournit une représentation visuelle des relations hiérarchiques. Dans notre cas, il montre comment les catégories d'articles (sweater, outwear, bottom) se répartissent entre les sexes (hommes et femmes) :
 
-![Sunburst - Répartition des catégories](./assets/sunburst.png)
+![Sunburst - Répartition des catégories](./app/assets/sunburst.png)
 
 - **Zoom sur la catégorie femmes** :
   - En cliquant sur "women", nous voyons les détails suivants :
 
-  ![Sunburst ](./assets/sunburst_women.png)
+  ![Sunburst ](./app/assets/sunburst_women.png)
     - **Bottoms** : 72 articles.
     - **Outwear** : 51 articles.
     - **Sweaters** : 50 articles.  
@@ -207,7 +207,7 @@ Pour représenter la distribution des prix, nous avons utilisé des **graphes en
 
   - Une fonctionnalité de **filtrage dynamique** est disponible dans notre tableau de bord, permettant de sélectionner et d’afficher uniquement la courbe qui vous semble pertinente à analyser.
 
-  ![filtre](./assets/filtre_dyn.png)
+  ![filtre](./app/assets/filtre_dyn.png)
 
 
    - Pour la prémière section, trois courbes distinctes sont affichées sur notre page, représentant :
@@ -226,7 +226,7 @@ Pour représenter la distribution des prix, nous avons utilisé des **graphes en
      - Les **outwear** ont une répartition plus large, allant de 50 à 150, suggérant une variabilité importante selon les modèles.
      - Les **sweaters** ont des prix généralement plus bas, autour de 30 à 50, avec moins de dispersion.
 
-   ![Violin Combiné](assets/violin_combined.png)
+   ![Violin Combiné](app/assets/violin_combined.png)
 
 2. **Graphique pour hommes** :
    - Le graphique montre que les articles pour hommes ont des prix globalement concentrés, avec :
@@ -240,7 +240,7 @@ Pour représenter la distribution des prix, nous avons utilisé des **graphes en
      - Les **sweaters** pour femmes ont une répartition très concentrée autour de 30 à 50, indiquant une offre homogène en termes de prix.
      - Les **outwear** pour femmes présentent des prix plus variables, avec des valeurs qui atteignent 150 ou plus.
 
-   ![Violin Femmes](assets/violin-women.png)
+   ![Violin Femmes](app/assets/violin-women.png)
 
 ---
 
@@ -257,7 +257,7 @@ Pour explorer la relation entre les **notes des articles** et leurs **prix**, no
 
 
 
-![Graphique Notes vs Prix](assets/graphe1_note.png)
+![Graphique Notes vs Prix](app/assets/graphe1_note.png)
 
 ---
 
@@ -279,7 +279,7 @@ Pour explorer la relation entre les **notes des articles** et leurs **prix**, no
 Afin de mettre en vitrine les articles les plus appréciés des utilisateurs, nous avons décidé de créer des **nuages de mots**, une méthode visuelle et intuitive pour analyser les termes les plus récurrents dans les descriptions des produits. Cette approche permet non seulement de mettre en lumière les tendances et préférences des consommateurs, mais également de fournir une vue d’ensemble rapide des articles les plus populaires selon le sexe. 
 
 ---
-  ![Wordcloud](assets/articles_vogue.png)
+  ![Wordcloud](app/assets/articles_vogue.png)
 ---
 
 #### **Analyses**
@@ -292,7 +292,7 @@ Afin de mettre en vitrine les articles les plus appréciés des utilisateurs, no
 
 
 ### **Onglet Cartographie**
-![image_carte](assets/carte.png)
+![image_carte](app/assets/carte.png)
 
 Une visualisation des différents magasins Uniqlo en Ile-de-France.
 
