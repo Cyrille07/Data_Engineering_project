@@ -1,0 +1,73 @@
+version: '3.8'
+services:
+  scrapy:
+    image: scrapy-image
+    container_name: scrapy-cont
+    build: 
+      context: ./scrapy
+      dockerfile: Dockerfile
+    tty: true
+    networks:
+      - mynetwork
+
+  mongo_uniqlo:
+    image: mongo:latest
+    container_name: my-mongo-uniqlo
+    tty: true
+    build: 
+      context: ./MongoDB
+      dockerfile: Dockerfile
+    ports:
+      - "27017:27017"
+    depends_on:
+      - scrapy
+    networks:
+      - mynetwork
+
+  elastic:
+    image: elasticsearch:8.15.2
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    build: 
+      context: ./Elasticsearch
+      dockerfile: Dockerfile
+    ports:
+      - "9200:9200"
+    depends_on:
+      - mongo_uniqlo
+    networks:
+      - mynetwork
+
+  kibana:
+    image: kibana:8.15.2
+    container_name: kibana
+    environment:
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elastic
+    networks:
+      - mynetwork
+
+  app:
+    image: app-image
+    container_name: app-dashboard
+    build: 
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "8050:8050"
+    depends_on:
+      - mongo_uniqlo
+      - elastic
+      - kibana
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge

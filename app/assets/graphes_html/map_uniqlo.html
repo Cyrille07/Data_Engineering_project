@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d7a07848762fb7c6bbb027f84c259af2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d7a07848762fb7c6bbb027f84c259af2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d7a07848762fb7c6bbb027f84c259af2 = L.map(
+                "map_d7a07848762fb7c6bbb027f84c259af2",
+                {
+                    center: [48.8566, 2.3522],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a875643e91eead0ebfd832e4a06efc7a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a875643e91eead0ebfd832e4a06efc7a.addTo(map_d7a07848762fb7c6bbb027f84c259af2);
+        
+    
+            var marker_db7d20777feecc7cc55e92ee1587f30f = L.marker(
+                [48.82, 2.35],
+                {}
+            ).addTo(map_d7a07848762fb7c6bbb027f84c259af2);
+        
+    
+            var icon_1ba14e33cd449bdbb30b64031cc82e3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_db7d20777feecc7cc55e92ee1587f30f.setIcon(icon_1ba14e33cd449bdbb30b64031cc82e3e);
+        
+    
+        var popup_b9f91fac7fbcff109e3740832b0728a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0564b9669e0c1573c4178b1cd50d66d9 = $(`<div id="html_0564b9669e0c1573c4178b1cd50d66d9" style="width: 100.0%; height: 100.0%;">UNIQLO ITALIE 2</div>`)[0];
+                popup_b9f91fac7fbcff109e3740832b0728a4.setContent(html_0564b9669e0c1573c4178b1cd50d66d9);
+            
+        
+
+        marker_db7d20777feecc7cc55e92ee1587f30f.bindPopup(popup_b9f91fac7fbcff109e3740832b0728a4)
+        ;
+
+        
+    
+    
+            var marker_23a9a9baf2ed9805aaa49093eeb87393 = L.marker(
+                [48.84, 2.32],
+                {}
+            ).addTo(map_d7a07848762fb7c6bbb027f84c259af2);
+        
+    
+            var icon_e3668d54efdf82f892338baddea364d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_23a9a9baf2ed9805aaa49093eeb87393.setIcon(icon_e3668d54efdf82f892338baddea364d6);
+        
+    
+        var popup_5d4c1d466e5454355138c553b0bcc256 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35ca29f0bc796ef4d17472de8ef09589 = $(`<div id="html_35ca29f0bc796ef4d17472de8ef09589" style="width: 100.0%; height: 100.0%;">UNIQLO MONTPARNASSE</div>`)[0];
+                popup_5d4c1d466e5454355138c553b0bcc256.setContent(html_35ca29f0bc796ef4d17472de8ef09589);
+            
+        
+
+        marker_23a9a9baf2ed9805aaa49093eeb87393.bindPopup(popup_5d4c1d466e5454355138c553b0bcc256)
+        ;
+
+        
+    
+    
+            var marker_30e0cf21cbfe411b485c2fca80caa7a9 = L.marker(
+                [48.85, 2.33],
+                {}
+            ).addTo(map_d7a07848762fb7c6bbb027f84c259af2);
+        
+    
+            var icon_9b5779c6f46e1dc9e5557c76264d7e0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_30e0cf21cbfe411b485c2fca80caa7a9.setIcon(icon_9b5779c6f46e1dc9e5557c76264d7e0f);
+        
+    
+        var popup_06fcfa8cece950cb95d015bf47b50715 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d0fd8bed2ca8869d680d53733603d0f = $(`<div id="html_9d0fd8bed2ca8869d680d53733603d0f" style="width: 100.0%; height: 100.0%;">UNIQLO SAINT-GERMAIN-DES-PRÉS</div>`)[0];
+                popup_06fcfa8cece950cb95d015bf47b50715.setContent(html_9d0fd8bed2ca8869d680d53733603d0f);
+            
+        
+
+        marker_30e0cf21cbfe411b485c2fca80caa7a9.bindPopup(popup_06fcfa8cece950cb95d015bf47b50715)
+        ;
+
+        
+    
+    
+            var marker_ccfb71989df84cd9b08ada08faf4b86e = L.marker(
+                [48.8592, 2.34],
+                {}
+            ).addTo(map_d7a07848762fb7c6bbb027f84c259af2);
+        
+    
+            var icon_bdbab97fa51b7d130b843cbf0fe3b9c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ccfb71989df84cd9b08ada08faf4b86e.setIcon(icon_bdbab97fa51b7d130b843cbf0fe3b9c4);
+        
+    
+        var popup_b4b2772c48209ed4b30083096b4a1e84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9ad15ff52ec14c13c3e2a275322b493 = $(`<div id="html_a9ad15ff52ec14c13c3e2a275322b493" style="width: 100.0%; height: 100.0%;">UNIQLO RIVOLI</div>`)[0];
+                popup_b4b2772c48209ed4b30083096b4a1e84.setContent(html_a9ad15ff52ec14c13c3e2a275322b493);
+            
+        
+
+        marker_ccfb71989df84cd9b08ada08faf4b86e.bindPopup(popup_b4b2772c48209ed4b30083096b4a1e84)
+        ;
+
+        
+    
+    
+            var marker_8df0a548f57bb5261f0e2e057231d197 = L.marker(
+                [48.857, 2.36],
+                {}
+            ).addTo(map_d7a07848762fb7c6bbb027f84c259af2);
+        
+    
+            var icon_8573924f1590c452c98f7de29bdb0387 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8df0a548f57bb5261f0e2e057231d197.setIcon(icon_8573924f1590c452c98f7de29bdb0387);
+        
+    
+        var popup_2d2728daab42123575ebf2f66cae675c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f94c7c4e5d818b45411cdb288dbc5d0c = $(`<div id="html_f94c7c4e5d818b45411cdb288dbc5d0c" style="width: 100.0%; height: 100.0%;">UNIQLO LE MARAIS</div>`)[0];
+                popup_2d2728daab42123575ebf2f66cae675c.setContent(html_f94c7c4e5d818b45411cdb288dbc5d0c);
+            
+        
+
+        marker_8df0a548f57bb5261f0e2e057231d197.bindPopup(popup_2d2728daab42123575ebf2f66cae675c)
+        ;
+
+        
+    
+    
+            var marker_8f3868884e3397573948f8e8cdd3cf1e = L.marker(
+                [48.857, 2.401],
+                {}
+            ).addTo(map_d7a07848762fb7c6bbb027f84c259af2);
+        
+    
+            var icon_a8f62caeff4fd471874a09590a895911 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8f3868884e3397573948f8e8cdd3cf1e.setIcon(icon_a8f62caeff4fd471874a09590a895911);
+        
+    
+        var popup_fa694e98ee496423b41b6444032aae6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ee9416e1f127fdb7e6613129b0496c8 = $(`<div id="html_4ee9416e1f127fdb7e6613129b0496c8" style="width: 100.0%; height: 100.0%;">UNIQLO PRINTEMPS NATION</div>`)[0];
+                popup_fa694e98ee496423b41b6444032aae6e.setContent(html_4ee9416e1f127fdb7e6613129b0496c8);
+            
+        
+
+        marker_8f3868884e3397573948f8e8cdd3cf1e.bindPopup(popup_fa694e98ee496423b41b6444032aae6e)
+        ;
+
+        
+    
+    
+            var marker_9424b07e65b06016a2208cae1e89e6f7 = L.marker(
+                [48.873, 2.33],
+                {}
+            ).addTo(map_d7a07848762fb7c6bbb027f84c259af2);
+        
+    
+            var icon_fb68608d8cf806264bda6410f2e57446 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9424b07e65b06016a2208cae1e89e6f7.setIcon(icon_fb68608d8cf806264bda6410f2e57446);
+        
+    
+        var popup_e2de7e8db3133b115658868b3dd30364 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42fa12f0a8d1cc881d572f4db472f642 = $(`<div id="html_42fa12f0a8d1cc881d572f4db472f642" style="width: 100.0%; height: 100.0%;">UNIQLO PARIS OPÉRA</div>`)[0];
+                popup_e2de7e8db3133b115658868b3dd30364.setContent(html_42fa12f0a8d1cc881d572f4db472f642);
+            
+        
+
+        marker_9424b07e65b06016a2208cae1e89e6f7.bindPopup(popup_e2de7e8db3133b115658868b3dd30364)
+        ;
+
+        
+    
+    
+            var marker_0c9a39df00405870082eaf4abfa23044 = L.marker(
+                [48.849, 2.282],
+                {}
+            ).addTo(map_d7a07848762fb7c6bbb027f84c259af2);
+        
+    
+            var icon_ae0d790391cac5ee86f575f3d6b897e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0c9a39df00405870082eaf4abfa23044.setIcon(icon_ae0d790391cac5ee86f575f3d6b897e9);
+        
+    
+        var popup_1527f2b981e5ee74e8740898c1ab00e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_810a2a556a470336ca1eb59aa32d7f1f = $(`<div id="html_810a2a556a470336ca1eb59aa32d7f1f" style="width: 100.0%; height: 100.0%;">UNIQLO BEAUGRENELLE</div>`)[0];
+                popup_1527f2b981e5ee74e8740898c1ab00e7.setContent(html_810a2a556a470336ca1eb59aa32d7f1f);
+            
+        
+
+        marker_0c9a39df00405870082eaf4abfa23044.bindPopup(popup_1527f2b981e5ee74e8740898c1ab00e7)
+        ;
+
+        
+    
+    
+            var marker_88df008e438b43d67a36ed81e8433707 = L.marker(
+                [48.857, 2.279],
+                {}
+            ).addTo(map_d7a07848762fb7c6bbb027f84c259af2);
+        
+    
+            var icon_435bcc4af9c7a27ccc49898c8f7b5458 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_88df008e438b43d67a36ed81e8433707.setIcon(icon_435bcc4af9c7a27ccc49898c8f7b5458);
+        
+    
+        var popup_26a4155dbd2cbc43c821e5b85b55a5a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42b01b8780b164637189cc89328fcecf = $(`<div id="html_42b01b8780b164637189cc89328fcecf" style="width: 100.0%; height: 100.0%;">UNIQLO PASSY PLAZA</div>`)[0];
+                popup_26a4155dbd2cbc43c821e5b85b55a5a3.setContent(html_42b01b8780b164637189cc89328fcecf);
+            
+        
+
+        marker_88df008e438b43d67a36ed81e8433707.bindPopup(popup_26a4155dbd2cbc43c821e5b85b55a5a3)
+        ;
+
+        
+    
+    
+            var marker_c5d5264c3eb2f2fc080cbd96277bc765 = L.marker(
+                [48.892, 2.296],
+                {}
+            ).addTo(map_d7a07848762fb7c6bbb027f84c259af2);
+        
+    
+            var icon_0a43fd22dcd6560c69204556d2ec9121 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c5d5264c3eb2f2fc080cbd96277bc765.setIcon(icon_0a43fd22dcd6560c69204556d2ec9121);
+        
+    
+        var popup_946ef4b594cdb03385dadf874a9f4407 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_806ea75b2983f7d872738218eeeda60b = $(`<div id="html_806ea75b2983f7d872738218eeeda60b" style="width: 100.0%; height: 100.0%;">UNIQLO SO OUEST</div>`)[0];
+                popup_946ef4b594cdb03385dadf874a9f4407.setContent(html_806ea75b2983f7d872738218eeeda60b);
+            
+        
+
+        marker_c5d5264c3eb2f2fc080cbd96277bc765.bindPopup(popup_946ef4b594cdb03385dadf874a9f4407)
+        ;
+
+        
+    
+    
+            var marker_238e66a66c8406552f36a90d78c5ebef = L.marker(
+                [48.892, 2.238],
+                {}
+            ).addTo(map_d7a07848762fb7c6bbb027f84c259af2);
+        
+    
+            var icon_9a9d3ce2be0f8547d1c3b664f399e971 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_238e66a66c8406552f36a90d78c5ebef.setIcon(icon_9a9d3ce2be0f8547d1c3b664f399e971);
+        
+    
+        var popup_5382a18489de0bab41b528e2e22f4dab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_956bfe3eaa1f2266f09b5092964c6529 = $(`<div id="html_956bfe3eaa1f2266f09b5092964c6529" style="width: 100.0%; height: 100.0%;">UNIQLO LA DÉFENSE</div>`)[0];
+                popup_5382a18489de0bab41b528e2e22f4dab.setContent(html_956bfe3eaa1f2266f09b5092964c6529);
+            
+        
+
+        marker_238e66a66c8406552f36a90d78c5ebef.bindPopup(popup_5382a18489de0bab41b528e2e22f4dab)
+        ;
+
+        
+    
+</script>
+</html>
